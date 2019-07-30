@@ -1,0 +1,147 @@
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~
+$ cd Training/
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training
+$ PWD
+/c/Users/Admin/Training
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training
+$ mkdir FirstRepo
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training
+$ pwd
+/c/Users/Admin/Training
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training
+$ ls
+FirstRepo/
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training
+$ cd *
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo
+$ git init
+Initialized empty Git repository in C:/Users/Admin/Training/FirstRepo/.git/
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ touch Test
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ touch test1
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Test
+        test1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git add .
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Test
+        new file:   test1
+
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git commit -am "First Commit"
+[master (root-commit) 9241900] First Commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Test
+ create mode 100644 test1
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git log
+commit 924190015d6ea03a08965c402adba5f7a1d0cecf (HEAD -> master)
+Author: rangat <subramanyam.talari@yahoo.com>
+Date:   Mon Jul 29 03:40:08 2019 -0700
+
+    First Commit
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ vi Test
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ touch Test3
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Test
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Test3
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git add .
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git commit -an "second commit"
+fatal: paths 'second commit ...' with -a does not make sense
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Test
+        new file:   Test3
+
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git log
+commit 924190015d6ea03a08965c402adba5f7a1d0cecf (HEAD -> master)
+Author: rangat <subramanyam.talari@yahoo.com>
+Date:   Mon Jul 29 03:40:08 2019 -0700
+
+    First Commit
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git commit -am "Second commit"
+[master d75857e] Second commit
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 Test3
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git log --oneline
+d75857e (HEAD -> master) Second commit
+9241900 First Commit
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Admin@DESKTOP-A4JEGAQ MINGW64 ~/Training/FirstRepo (master)
+$
